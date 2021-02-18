@@ -1,25 +1,74 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+// import styled from 'styled-components'
+import NavBar from './components/NavBar';
+import About from './components/About';
+import Home from './components/Home';
+import Links from './components/Links';
+import Contact from './components/contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+<Router>
+<div className="main">
+
+<div id="heading"><h1>Adam Jones</h1>
+<h3>Junior Developer</h3>
+</div>
+
+<div id="flex">
+
+<div className="container">
+<div id="links">  
+    <div><NavBar /></div>
+    <div><Links /></div>
+</div>
+
+{/* <div id="content"></div> Not even being used atm! */}
+</div>
+
+<Switch>
+<Route exact path="/">
+  <Home />
+  </Route>
+  </Switch>
+
+  <Switch>
+<Route exact path="/about">
+  <About />
+</Route>
+</Switch>
+
+<Switch>
+<Route exact path="/contact">
+  <Contact />
+</Route>
+</Switch>
+
+{/* <Switch>
+<Route exact path="/work">
+  <p>work</p>
+</Route>
+</Switch> */}
+
+</div>
+
+<div className="footer"><p>footer</p></div>
+
+</div>
+</Router>
+
   );
 }
+
+// const Container = styled.div`
+
+// background-color: lightseagreen;
+// display: flex;
+// flex-wrap: space-evenly ;
+// justify-content: center;
+// align-items: center;
+// `;
 
 export default App;
