@@ -55,10 +55,11 @@ const App = () => {
 </div>
 
 <div className="footer"><p>footer</p></div>
-
-</div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> 
+from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</div> 
 </Router>
-
+//consider adding credits link as likely to add other code/images in!
   );
 }
 
