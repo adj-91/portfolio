@@ -1,4 +1,9 @@
 import {NavLink} from "react-router-dom";
+import AboutSvg from './svg/Aboutsvg';
+import HomeSvg from './svg/Homesvg';
+import ContactSvg from "./svg/Contactsvg";
+import LinkedinSvg from "./svg/LinkedinSvg";
+import GithubSvg from "./svg/Githubsvg";
 
 // import styled from 'styled-components'
 
@@ -7,16 +12,22 @@ const NavBar = () => {
       <div className="navbar">
         <nav>
             <p>
-              <NavLink to="/" className="button" >Home</NavLink>
+              <NavLink to="/" ><HomeSvg/></NavLink>
             </p>
             <p>
-              <NavLink to="about" className="button" >About</NavLink>
+              <NavLink to="about" ><AboutSvg/></NavLink>
             </p>
             {/* <p>
               <NavLink to="work"  id="navlink">Work</NavLink>
             </p> */}
             <p>
-              <NavLink to="contact" className="button" >Contact</NavLink>
+              <NavLink to="contact" ><ContactSvg/></NavLink>
+            </p>
+            <p>
+              <LinkedinSvg />
+            </p>
+            <p>
+              <GithubSvg />
             </p>
         </nav>
       </div>

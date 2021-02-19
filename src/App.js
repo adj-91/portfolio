@@ -4,29 +4,46 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import NavBar from './components/NavBar';
 import About from './components/About';
 import Home from './components/Home';
-import Links from './components/Links';
 import Contact from './components/contact';
 
 const App = () => {
+  let userAgentString = navigator.userAgent; 
+  let firefoxAgent = userAgentString.indexOf("Firefox") > -1; 
+ 
+  const fireFoxHandler = () => { //need to prevent overline in firefox
+  if (firefoxAgent) {
+    return (
+      <div id="headingFirefox"><h1>Adam Jones</h1>
+      <h3>Junior Developer</h3>
+      </div>
+    ) }
+    else {
+      return (
+        <div id="heading"><h1>Adam Jones</h1>
+        <h3>Junior Developer</h3>
+        </div>
+      )
+    }
+  }
+
   return (
   
 <Router>
 <div className="main">
 
 <div id="heading"><h1>Adam Jones</h1>
-<h3>Junior Developer</h3>
-</div>
+        <h3>Junior Developer</h3>
+        </div>
 
 <div id="flex">
 
 <div className="container">
 <div id="links">  
-    <div><NavBar /></div>
-    <div><Links /></div>
+    <NavBar />
 </div>
 
 {/* <div id="content"></div> Not even being used atm! */}
-</div>
+</div >
 
 <Switch>
 <Route exact path="/">
@@ -54,9 +71,6 @@ const App = () => {
 
 </div>
 
-<div className="footer"><p>footer</p></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> 
-from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 </div> 
 </Router>
 //consider adding credits link as likely to add other code/images in!

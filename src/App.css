@@ -1,10 +1,8 @@
 @font-face {
   font-family: lexendGiga;
   src: url('./fonts/LexendGiga-Regular.ttf');
-}
-
-html {
-  margin: 30px;
+  font-family: karla;
+  src: url('./fonts/Karla-VariableFont_wght.ttf');
 }
 
 body{
@@ -19,6 +17,13 @@ position: relative;
 }
 
 #heading {
+  font-family: lexendGiga;
+  text-align: center;
+  color: rgb(240, 248, 255);
+  text-decoration: overline;
+}
+
+#headingFirefox {
   font-family: lexendGiga;
   text-align: center;
   color: rgb(240, 248, 255);
@@ -47,41 +52,12 @@ position: relative;
   padding: 0px;
 }
 
-.footer {
-  
-}
-
 .navbar {
 
   display: flex;
   justify-content: center;
   background-color: wheat;
   border-radius: 20px;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#linkedin, #github {
-  margin-left: 2vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-right: 2vh;
-  height: 50px;
-  width: 50px;
-  transition: width 1s, height 1s ;
-}
-#linkedin:hover {
-  height:45px;
-  width: 45px;
-}
-
-#github:hover {
-  height:45px;
-  width: 45px;
 }
 
 #navlink {
@@ -93,39 +69,53 @@ position: relative;
 }
 
 .home, .about, .work, .contact {
+  font-family: lexendGiga;
   display: flex;
   justify-content: center;
 }
 
-.button {
-	box-shadow: 0px 0px 0px 2px #9fb4f2;
-	background:linear-gradient(to bottom, wheat 5%, #476e9e 100%);
-	background-color:#7892c2;
-	border-radius:10px;
-	border:1px solid #4e6096;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:14px;
-	padding:10px 15px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #283966;
-  
-  width: 5vh;
-  text-align: center;
+.navSvg {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  width: 60px;
+  height: 60px;
+  stroke: none;
+  fill:#009688;
+
+  transition: fill 1s;
 }
-.button:hover {
-	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
-	background-color:#476e9e;
+.navSvg:hover {
+fill: rgb(0, 0, 0);
 }
-.button:active {
-	position: relative;
-	top:1px;
+.navSvg:active {
+background-color: rgb(255, 255, 255);
+border-radius: 18px;
 }
 
+.socialSvg {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  width: 60px;
+  height: 60px;
+  stroke: none;
+  fill: rgb(0, 0, 0);
+
+  transition: fill 1s;
+}
+.socialSvg:hover {
+  fill: #009688;
+}
 
 #text {
-  margin-left: 3vh;
-  margin-right: 3vh;
+  font-family: karla;
+  margin-left: 5vh;
+  margin-right: 5vh;
+}
+
+@supports not (text-decoration: overline) {
+  #heading {
+    text-decoration: underline;
+  }
 }
