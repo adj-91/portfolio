@@ -1,11 +1,11 @@
 import React from "react";
 
 const About = () => (
-  <div>
+  <div >
     <h1 className="about">About</h1>
     <div id="text">
     <p>
-        Information about me and contact details blah blah blah blah blah
+        l
     </p>
     </div>
   </div>

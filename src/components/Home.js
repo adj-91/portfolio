@@ -5,7 +5,9 @@ const Home = () => (
     <h1 className="home" id="title">Home</h1>
     <div id="text">
     <p>
-      Welcome to my portfolio website. Please click "about" for more about me, "work" for some samples of my work or check out my Linkedin and Github!
+      Hi, I'm Adam. I'm currently doing a coding bootcamp at CodeNation and am looking
+      for an apprenticeship or junior developer role to further build on what I have 
+      learnt. I am leaning towards backend technologies, really enjoying nodejs
     </p>
     </div>
   </div>

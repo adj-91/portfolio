@@ -4,7 +4,7 @@ const AboutSvg = ({fill}) => (
 
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
      width="1280.000000pt" height="1210.000000pt" viewBox="0 0 1280.000000 1210.000000"
-     preserveAspectRatio="xMidYMid meet" className="navSvg">
+     preserveAspectRatio="xMidYMid meet" className="navSvg" >
     <metadata>
     Created by potrace 1.15, written by Peter Selinger 2001-2017
     </metadata>
