@@ -11,37 +11,28 @@ const NavBar = () => {
     return (
       <div className="navbar">
         <nav>
-            <p>
-              <NavLink to="/" ><HomeSvg/> <svg height="20" width="60">
-              <text x="7" y="20" fill="#009688">Home</text>
-              </svg> </NavLink>
+            <p className="svgText">
+              <NavLink to="/" ><HomeSvg/> </NavLink>
+              Home
             </p>
-            <p>
-              <NavLink to="about" ><AboutSvg/> <svg height="20" width="60">
-              <text x="7" y="20" fill="#009688">About</text>
-              </svg></NavLink>
+            <p className="svgText">
+              <NavLink to="about" ><AboutSvg/></NavLink>
+              About
             </p>
             {/* <p>
               <NavLink to="work"  id="navlink">Work</NavLink>
             </p> */}
-            <p>
-              <NavLink to="contact" ><ContactSvg/> <svg height="20" width="60">
-              <text x="2" y="20" fill="#009688">Contact</text>
-              </svg></NavLink>
+            <p className="svgText">
+              <NavLink to="contact" ><ContactSvg/></NavLink>
+              Contact
             </p>
-            <p>
-              <LinkedinSvg /> <svg height="20" width="60" >
-              <a href="https://www.linkedin.com/in/admmj/" target="blank">
-              <text x="0" y="20" fill="#222222" >Linkedin</text>
-              </a>
-              </svg>
+            <p className="svgText">
+              <LinkedinSvg /> 
+              Linkedin
             </p>
-            <p>
-              <GithubSvg /> <svg height="20" width="60">
-              <a href="https://github.com/adj-91/" target="blank">
-              <text x="7" y="20" fill="#222222" >Github</text>
-              </a>
-              </svg>
+            <p className="svgText">
+              <GithubSvg /> 
+              Github
             </p>
         </nav>
       </div>
