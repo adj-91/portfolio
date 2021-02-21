@@ -1,11 +1,18 @@
 import './App.css';
+import './components/LavaLamp/LavaLamp.css';
+import './components/NavBar/NavBar.css';
+import './components/Home/Home.css';
+import './components/Work/Work.css';
+import './components/About/About.css';
+
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 // import styled from 'styled-components'
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Home from './components/Home';
-import Contact from './components/contact';
-import LavaLamp from './components/LavaLamp';
+import NavBar from './components/NavBar/NavBar';
+import About from './components/About/About';
+import Home from './components/Home/Home';
+import Work from './components/Work/Work';
+import Contact from './components/Contact/contact';
+import LavaLamp from './components/LavaLamp/LavaLamp';
 
 const App = () => {
 
@@ -14,19 +21,13 @@ const App = () => {
 <Router>
 <div className="main">
 
-<div id="heading"><h1>Adam Jones</h1>
-        <h3>Junior Developer</h3>
-        </div>
 
-<div id="flex">
 
-<div className="container">
-<div id="links">  
+        <div className="navBar">
     <NavBar />
-</div>
+    </div>
 
 {/* <div id="content"></div> Not even being used atm! */}
-</div >
 
 <div id="content">
 <Switch>
@@ -41,20 +42,19 @@ const App = () => {
 </Route>
 </Switch>
 
-<Switch>
+{/* <Switch>
 <Route exact path="/contact">
   <Contact />
 </Route>
-</Switch>
-
-{/* <Switch>
-<Route exact path="/work">
-  <p>work</p>
-</Route>
 </Switch> */}
+
+<Switch>
+<Route exact path="/work">
+  <Work />
+</Route>
+</Switch>
 </div>
 
-</div>
 
 </div> 
 

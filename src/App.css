@@ -3,6 +3,10 @@
   src: url('./fonts/LexendGiga-Regular.ttf');
   font-family: karla;
   src: url('./fonts/Karla-VariableFont_wght.ttf');
+  font-family: poppinsExtraBold;
+  src: url('./fonts/Poppins-ExtraBold.ttf');
+  font-family: poppinsLight;
+  src: url('./fonts//Poppins-Light.ttf');
 }
 
 body{
@@ -12,318 +16,34 @@ body{
   background: transparent;
   background-color: #090a0f;
 
-  background: radial-gradient(ellipse at bottom, rgba(27, 39, 53, 1), 
-  rgba(9, 10, 15, 1));
+  background: radial-gradient(ellipse at bottom, #090a0f, 
+  #090a0f);
   overflow: hidden;
 }
 
-.lamp{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  height: 100vh;
-  height: 100vh;
-  width: 100vw;
-  min-width: 100vw;
-  z-index:-1;
-}
-
-.lava{
-  filter: url("#goo");
-  position:absolute;
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-}
-
-.blob{
-  border-radius: 50%;
-  background: #e8630a;
-  position:absolute;
-}
-
-.blob.top{
-  border-radius: 50%;
-  width: 100%;
-  height: 4%;
-  top: -3%;
-  left:0;
-  
-}
-.blob.bottom{
-  border-radius: 50%;
-  width: 100%;
-  height:4%;
-  bottom: -3%;
-  left:0;
-}
-.blob:nth-child(1){
-  width: 200px;
-  height: 200px;
-  left: 35%;
-  bottom:-15%;
- 
-  animation: wobble 4s ease-in-out alternate infinite, blob-one ease-in-out 13s infinite;
-}
-.blob:nth-child(2){
-  width: 330px;
-  height: 330px;
-  right: 24%;
-  bottom:-65%;
-  
-  animation: wobble 5s ease-in-out alternate infinite, blob-two ease-in-out 22s infinite;
- 
-  
-
-}
-.blob:nth-child(3){
-  width: 150px;
-  height: 150px;
-  bottom:-15%;
-  left: 34%;
-  
-  animation: wobble 6s ease-in-out alternate infinite, blob-three ease-in-out 16s infinite;
-}
-.blob:nth-child(4){
-  width: 235px;
-  height: 235px;
-  bottom:-19%;
-  left: 30%;
-  
-  animation: wobble 7s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
-}
-.blob:nth-child(4){
-  width: 235px;
-  height: 235px;
-  bottom:-19%;
-  left: 30%;
-  animation: wobble 8s ease-in-out alternate infinite, blob-four ease-in-out 12s infinite;
-}
-.blob:nth-child(5){
-   width: 55px;
-  height: 55px;
-  bottom:-25%;
-  left: 34%;
-  
-  animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
-}
-.blob:nth-child(6){
-  width: 35px;
-  height: 35px;
-  bottom:-25%;
-  right: 34%;
-  
-  animation:wobble 10s ease-in-out alternate infinite,  blob-six ease-in-out 12s infinite;
-}
-.blob:nth-child(7){
-  width: 435px;
-  height: 435px;
-  bottom:-85%;
-  right: 40%;
-  
-  animation: wobble 11s ease-in-out alternate infinite, blob-seven ease-in-out 32s infinite;
-}
-@keyframes blob-one{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-    transform: translatey(-700%);
-  }
-}
-
-@keyframes blob-two{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-    transform: translatey(-420%);
-  }
-}
-
-@keyframes blob-three{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-    transform: translatey(-305%);
-  }
-}
-@keyframes blob-four{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-    transform: translatey(-605%);
-  }
-}
-@keyframes blob-five{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-     transform: translatey(-700%);
-  }
-}
-@keyframes blob-six{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-     transform: translatey(-700%);
-  }
-}
-@keyframes blob-seven{
-  0%, 100%{
-    transform: translatey(0);
-  }
-  50%{
-     transform: translatey(-300%);
-  }
-}
-
-
-@keyframes wobble {
-  50% {
-   border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-  }
-  100% {
-   border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%;
-  }
-}
-
-
 .main {
-position: relative;
+display: flex;
+flex-direction: column;
 }
 
-#heading {
-  font-family: lexendGiga;
+#content { 
+  color: rgb(210, 210, 210);
+}
+
+#title {
+  font-family: poppinsExtraBold;
   text-align: center;
-  color: rgb(240, 248, 255);
-  text-decoration: overline;
+  font-size: 70px;
 }
 
-#headingFirefox {
-  font-family: lexendGiga;
-  text-align: center;
-  color: rgb(240, 248, 255);
-  text-decoration: underline;
-}
-
-#flex {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(110, 110, 223);
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  margin-top: 8vh;
-}
-
-.container {
-  margin: 0vh;
-}
-
-#links {
-  background-color: #fff6c1;
-  border-radius: 20px;
-  padding: 1vw;
-}
-
-#content {
-  padding: 0px;
-}
-
-#content {
-  
-  color: rgb(255, 255, 255);
-}
-
-.navbar {
-
-  display: flex;
-  justify-content: center;
-  background-color: #fff6c1;
-  border-radius: 20px;
-
-  text-align: center;
-  color: #222222;
-}
-
-#navlink {
-  color: rgb(236, 236, 236);
-  background-color: rgb(91, 28, 192);
-  border-radius: 15px;
-  border-width: 2px;
-  padding: 2px;
-}
-
-.home, .about, .work, .contact {
-  font-family: lexendGiga;
-  display: flex;
-  justify-content: center;
-}
-
-.navSvg {
-  display: flex;
-  flex-direction: column;
-  flex-basis: content;
-  width: 60px;
-  height: 60px;
-  stroke: none;
-  fill:#009688;
-
-  transition: fill 1s;
-}
-.navSvg:hover {
-fill: rgb(0, 0, 0);
-}
-
-.socialSvg {
-  display: flex;
-  flex-direction: column;
-  flex-basis: content;
-  width: 60px;
-  height: 60px;
-  stroke: none;
-  fill: #222222;
-
-  transition: fill 1s;
-}
-.socialSvg:hover {
-  fill: #009688;
-}
-
-#content {
-  
+@media (max-width: 350px) {
+  #title {
+  font-size: 45px;
+  }
 }
 
 #text {
-  font-family: karla;
-  margin-left: 5vh;
-  margin-right: 5vh;
-}
-
-@supports not (text-decoration: overline) {
-  #heading {
-    text-decoration: underline;
-  }
-}
-
-@media (max-width: 500px) {
-
-  .navSvg{
-    width: 40px;
-    height: 40px;
-  }
-  .socialSvg{
-    width: 40px;
-    height: 40px;
-  }
-  .svgText{
-    font-size: 12px;
-  }
+  font-family: poppinsLight;
+  margin-left: 3vh;
+  margin-right: 3vh;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import LinkedinSvg from "./svg/LinkedinSvg";
-import GithubSvg from "./svg/Githubsvg";
+import LinkedinSvg from "../svg/LinkedinSvg";
+import GithubSvg from "../svg/Githubsvg";
 
 
 const Links = () => (

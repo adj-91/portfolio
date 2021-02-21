@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.svgDiv {
+  color: #d2d2d2;
+}
+
+.Svg {
+  height: 60px;
+  width: 60px;
+  fill: rgb(60, 163, 170);
+  transition: fill 1s;
+}
+
+.Svg:hover {
+  fill: rgb(255, 255, 255);
+}
+
+@media (max-width: 500px) {
+
+  .Svg{
+    width: 40px;
+    height: 40px;
+  }
+  .navBar{
+    font-size: 12px;
+  }
+}

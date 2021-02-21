@@ -1,0 +1,17 @@
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.gridTop, .gridBottom {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#grid1, #grid2, #grid3, #grid4 {
+    width: 50vh;
+    height: 25vh;
+}

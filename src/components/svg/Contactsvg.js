@@ -3,7 +3,7 @@ import React from "react";
 const ContactSvg = ({fill}) => (
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="1280.000000pt" height="824.000000pt" viewBox="0 0 1280.000000 824.000000"
- preserveAspectRatio="xMidYMid meet" className="navSvg">
+ preserveAspectRatio="xMidYMid meet" className="Svg" height="60" width="60">
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
