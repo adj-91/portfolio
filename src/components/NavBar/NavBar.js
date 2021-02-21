@@ -23,10 +23,10 @@ const NavBar = () => {
               <NavLink to="work"  ><WorkSvg /></NavLink>
             <p>Work</p>
             </div>
-            {/* <div className="svgDiv">
-              <NavLink to="contact" >contact</NavLink>
-              <p>Work</p>
-            </div> */}
+            <div className="svgDiv">
+              <NavLink to="contact" ><ContactSvg /></NavLink>
+              <p>Contact</p>
+            </div>
 
             <div className="svgDiv" >
               <LinkedinSvg /> 
