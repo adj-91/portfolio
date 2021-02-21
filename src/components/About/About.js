@@ -3,19 +3,19 @@ import React, {useState} from "react";
 const About = () => {
   
   const textArray = [
-  {text: "I am currently coming to the end of Code Nation's master coding\
-   bootcamp and seeking a junior dev or apprentice role to further develop my skills."},
+  "I am currently coming to the end of Code Nation's master coding\
+   bootcamp and seeking a junior dev or apprentice role to further develop my skills.",
 
-  {text: "Working with Javascript extensively, including nodejs, react, express\
-   as well as MongoDB and MySQLI have covered alot over the past 12 weeks."},
+  "Working with Javascript extensively, including nodejs, react, express\
+   as well as MongoDB and MySQLI have covered alot over the past 12 weeks.",
 
-  {text: "I have always had an interest in coding, previously having taken\
+  "I have always had an interest in coding, previously having taken\
    on a FnD degree in computer science, which I was unable to complete due to issues\
     I had at the time. I am excited to be taking this leap to try an kickstart a\
-     career in this field again!"}
+     career in this field again!"
   ]
 
-     const [text, setText] = useState(textArray[0].text);
+     const [text, setText] = useState(textArray[0]);
      const [textNum, setTextNum] = useState(0);
 
 
@@ -26,7 +26,7 @@ const About = () => {
       return;
     }
     else {
-      setText(textArray[num-1].text);
+      setText(textArray[num-1]);
       setTextNum(num-1);
     }
 
@@ -39,7 +39,7 @@ const About = () => {
       return;
     }
     else {
-      setText(textArray[num+1].text);
+      setText(textArray[num+1]);
       setTextNum(num+1);
     }
   }
