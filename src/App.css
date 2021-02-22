@@ -19,6 +19,7 @@ body{
   background: radial-gradient(ellipse at bottom, #090a0f, 
   #090a0f);
   overflow: hidden;
+  color: #f0f8ff;
 }
 
 .main {
@@ -26,8 +27,12 @@ display: flex;
 flex-direction: column;
 }
 
+.colourTheme {
+  position: absolute;
+}
+
 #content { 
-  color: rgb(210, 210, 210);
+  color: #d2d2d2;
 }
 
 #title {

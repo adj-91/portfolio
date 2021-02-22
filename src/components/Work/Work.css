@@ -7,11 +7,26 @@
 
 .gridTop, .gridBottom {
     display: flex;
-    flex-direction: row;
+    flex-direction: space;
+    justify-content: space-evenly;
 }
 
 
 #grid1, #grid2, #grid3, #grid4 {
     width: 50vh;
     height: 25vh;
+
+    overflow: auto;
+}
+
+#link {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+
+ @media (max-width: 500px) {
+    .grid {
+        font-size: 14px;
+    }
 }

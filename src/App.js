@@ -6,7 +6,9 @@ import './components/Work/Work.css';
 import './components/About/About.css';
 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
-// import styled from 'styled-components'
+import styled from 'styled-components'
+import {useState} from 'react';
+
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Home from './components/Home/Home';
@@ -16,18 +18,18 @@ import LavaLamp from './components/LavaLamp/LavaLamp';
 
 const App = () => {
 
+const [darkMode, setDarkMode] = useState(true);
+
   return (
   
 <Router>
 <div className="main">
+{/* <p className="colourTheme">dark mode</p> */}
 
 
-
-        <div className="navBar">
+  <div className="navBar">
     <NavBar />
-    </div>
-
-{/* <div id="content"></div> Not even being used atm! */}
+  </div>
 
 <div id="content">
 <Switch>
@@ -60,7 +62,6 @@ const App = () => {
 
 <LavaLamp />
 </Router>
-//consider adding credits link as likely to add other code/images in!
   );
 }
 
