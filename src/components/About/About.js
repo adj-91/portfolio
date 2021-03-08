@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import styled from 'styled-components';
 
 const About = () => {
   
@@ -7,7 +8,7 @@ const About = () => {
    bootcamp and seeking a junior dev or apprentice role to further develop my skills.",
 
   "Working with Javascript extensively, including nodejs, react, express\
-   as well as MongoDB and MySQLI have covered alot over the past 12 weeks.",
+   as well as MongoDB and MySQL I have covered alot over the past 12 weeks.",
 
   "I have always had an interest in coding, previously having taken\
    on a FnD degree in computer science, which I was unable to complete due to issues\
@@ -55,27 +56,23 @@ return (
   <p>{text}</p>
 
     <div id="arrows">
-<p onClick={textUp}>▲</p>
-<p onClick={textDown}>▼</p>
+<ArrowUp onClick={textUp} list={textNum}>▲</ArrowUp>
+<ArrowDown onClick={textDown} list={textNum}>▼</ArrowDown>
 </div>
 </div>
 
 {/* None mobile display */}
 <div className="noneMobile">
- <p>
-    I am currently coming to the end of Code Nation's master coding
-   bootcamp and seeking a junior dev or apprentice role to further develop my skills.
-    </p>
+<p>
+{textArray[0]}
+</p>
 
 <p>
-Working with Javascript extensively, including nodejs, react, express as well as MongoDB and MySQL
-I have covered alot over the past 12 weeks.
-    </p>
+{textArray[1]}
+</p>
 
 <p>
-I have always had an interest in coding, previously having taken on a FnD degree in computer science,
-which I was unable to complete due to issues I had at the time. I am excited to be taking this leap
-to try an kickstart a career in this field again!
+{textArray[2]}
 </p>
 </div>
 
@@ -83,5 +80,17 @@ to try an kickstart a career in this field again!
   </div>
 
 )};
+
+
+
+const ArrowUp = styled.p`
+
+color: ${props=> props.list === 0 ? "#585858" : "#f0f8ff" };
+`;
+
+const ArrowDown = styled.p`
+
+color: ${props=> props.list === 2 ? "#585858" : "#f0f8ff" };
+`;
 
 export default About;
