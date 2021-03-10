@@ -2,8 +2,9 @@
 .grid {
     display: flex;
     flex-direction: column;
-    overflow: auto;
-    
+
+    /* height: 58vh;
+    overflow: auto; */
 }
 
 .gridTop, .gridBottom {
@@ -12,22 +13,7 @@
     justify-content: space-evenly;
 }
 
-
-#grid1, #grid2, #grid3, #grid4 {
-    width: 50vh;
-    height: 25vh;
-
-    overflow: auto;
-}
-
 #link {
     color: #f0f8ff;
     text-decoration: underline;
-}
-
-
- @media (max-width: 500px) {
-    .grid {
-        font-size: 14px;
-    }
 }

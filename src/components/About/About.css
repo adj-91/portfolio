@@ -1,14 +1,11 @@
 #arrows {
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
     font-size: 25px;
 }
 
 @media (max-width: 500px) {
-    #arrows {
-        font-size: 30px;
-        bottom: 0%;
-    }
+
     .noneMobile {
         display: none;
     }
